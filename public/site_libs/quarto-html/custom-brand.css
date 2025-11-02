@@ -49,43 +49,9 @@ header#quarto-header .navbar-container {
   color: var(--mita-cyan) !important;
 }
 
-/* Search Bar - Make it Prominent */
+/* Search Bar - Keep original style */
 #quarto-search {
-  flex: 1 1 auto;
-  margin: 0 1rem;
-  min-width: 200px;
   order: 2;
-  max-width: 400px;
-}
-
-#quarto-search .aa-Form {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  padding: 0.5rem 1rem !important;
-  transition: all 0.2s ease;
-}
-
-#quarto-search .aa-Form:focus-within {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  border-color: var(--mita-cyan) !important;
-  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1);
-}
-
-#quarto-search .aa-Input {
-  color: #ffffff !important;
-  font-size: 0.95rem;
-  background: transparent !important;
-}
-
-#quarto-search .aa-Input::placeholder {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-#quarto-search .aa-Label {
-  color: rgba(255, 255, 255, 0.7) !important;
-  display: none;
 }
 
 /* Navbar Tools */
