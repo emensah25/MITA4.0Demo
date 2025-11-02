@@ -40,8 +40,8 @@ header#quarto-header .navbar-container {
 }
 
 .navbar-brand-container .navbar-brand-logo {
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
