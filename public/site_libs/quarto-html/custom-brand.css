@@ -36,12 +36,12 @@ header#quarto-header .navbar-container {
   order: 1;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1.5rem;
 }
 
 .navbar-brand-container .navbar-brand-logo {
-  height: 80px;
-  width: 80px;
+  height: 160px;
+  width: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ header#quarto-header .navbar-container {
 
 .navbar-brand-container .navbar-brand {
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: -0.5px;
   color: #ffffff !important;
