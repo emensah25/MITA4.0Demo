@@ -56,10 +56,10 @@ header#quarto-header .navbar-container {
 /* Brand Styling */
 .navbar-brand-container {
   margin: 0 !important;
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   order: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 1.5rem;
 }
 
@@ -85,10 +85,12 @@ header#quarto-header .navbar-container {
   font-size: 16pt;
   font-weight: 700;
   padding-left: 30pt;
+  padding-bottom: 10px;
   letter-spacing: -0.5px;
   color: #ffffff !important;
   transition: color 0.2s ease;
   margin: 0;
+  flex: 1 1 auto;
 }
 
 .navbar-brand-container .navbar-brand:hover {
