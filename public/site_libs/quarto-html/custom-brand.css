@@ -77,11 +77,13 @@ header#quarto-header .navbar-container {
   object-fit: contain;
 }
 
-.navbar-brand-container .navbar-brand {
+.navbar-brand-container .navbar-brand,
+.navbar-brand-container .navbar-brand.mita-title {
   padding: 0;
-  padding-left: 30pt;
+  font-family: Bitter, serif;
   font-size: 16pt;
-  font-weight: bold;
+  font-weight: 700;
+  padding-left: 30pt;
   letter-spacing: -0.5px;
   color: #ffffff !important;
   transition: color 0.2s ease;
