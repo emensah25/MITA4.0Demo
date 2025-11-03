@@ -148,9 +148,9 @@ header#quarto-header .navbar-container {
 /* Secondary Navbar (Breadcrumbs) */
 nav.quarto-secondary-nav {
   background-color: var(--mita-light);
-  border-bottom: 1px solid var(--mita-border);
+  border-bottom: 2px solid #003d6b;
   padding: 0.75rem 1.5rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav.quarto-secondary-nav .quarto-btn-toggle {
@@ -226,10 +226,10 @@ nav#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a.sidebar-i
 
 /* Sidebar Dividers */
 nav#quarto-sidebar .sidebar-divider {
-  margin: 0.5rem 0;
-  border-color: var(--mita-border);
-  height: 1px;
-  background-color: var(--mita-border);
+  margin: 1rem 0;
+  border-color: #003d6b;
+  height: 2px;
+  background-color: #003d6b;
 }
 
 /* Regular Sidebar Items */
