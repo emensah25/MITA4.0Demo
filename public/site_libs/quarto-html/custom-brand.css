@@ -1,3 +1,6 @@
+/* From assets/css/index.css (minified design system) */
+@import "assets/css/index.css";
+
 /* Modern Minimal Navigation Design */
 
 /* Navy Blue Color Palette */
@@ -7,6 +10,20 @@
   --mita-cyan: #00d4ff;
   --mita-light: #f8f9fa;
   --mita-border: #e9ecef;
+}
+
+/* Custom title styling */
+.mita-title {
+  font-family: Bitter, serif;
+  font-size: 16pt;
+  font-weight: 700;
+  padding-left: 30pt;
+}
+
+/* Main content */
+article {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
 }
 
 /* Header and Navbar */
