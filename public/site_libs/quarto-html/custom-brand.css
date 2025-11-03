@@ -82,11 +82,13 @@ header#quarto-header .navbar-container {
 .navbar-brand-container .navbar-brand.mita-title {
   padding: 0;
   font-family: Bitter, serif;
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: 700;
   padding-left: 30pt;
   padding-bottom: 50px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
+  word-spacing: 0.2em;
+  line-height: 1.3;
   color: #ffffff !important;
   transition: color 0.2s ease;
   margin: 0;
