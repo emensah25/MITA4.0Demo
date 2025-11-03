@@ -15,9 +15,15 @@ header#quarto-header {
 }
 
 header#quarto-header .navbar {
-  padding: 0.75rem 0;
+  padding: 1.5rem;
   background-color: var(--mita-navy);
   border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  header#quarto-header .navbar {
+    padding: 1.25rem;
+  }
 }
 
 header#quarto-header .navbar-container {
@@ -40,8 +46,8 @@ header#quarto-header .navbar-container {
 }
 
 .navbar-brand-container .navbar-brand-logo {
-  height: 48px;
-  width: 48px;
+  height: auto;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,8 +62,9 @@ header#quarto-header .navbar-container {
 
 .navbar-brand-container .navbar-brand {
   padding: 0;
-  font-size: 2.2rem;
-  font-weight: 600;
+  padding-left: 30pt;
+  font-size: 16pt;
+  font-weight: bold;
   letter-spacing: -0.5px;
   color: #ffffff !important;
   transition: color 0.2s ease;
