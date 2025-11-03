@@ -29,6 +29,7 @@ article {
 /* Header and Navbar */
 header#quarto-header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #003d6b;
 }
 
 header#quarto-header .navbar {
