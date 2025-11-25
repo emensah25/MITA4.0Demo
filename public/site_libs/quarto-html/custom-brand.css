@@ -59,7 +59,7 @@ header#quarto-header .navbar-container {
   flex: 0 1 auto;
   order: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 1rem;
 }
