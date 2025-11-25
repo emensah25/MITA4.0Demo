@@ -65,7 +65,7 @@ header#quarto-header .navbar-container {
 
 .navbar-brand-container .navbar-brand-logo {
   height: auto;
-  width: 200px;
+  width: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ header#quarto-header .navbar-container {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  transform: translateY(50%);
+  transform: translateY(100%);
 }
 
 .navbar-brand-container .navbar-brand,
