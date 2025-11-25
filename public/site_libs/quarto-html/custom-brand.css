@@ -65,11 +65,12 @@ header#quarto-header .navbar-container {
 
 .navbar-brand-container .navbar-brand-logo {
   height: auto;
-  width: 200px;
+  width: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-left: -20px;
 }
 
 .navbar-brand-container .navbar-brand-logo img {
