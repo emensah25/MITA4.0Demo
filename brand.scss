@@ -1,0 +1,291 @@
+/*-- scss:defaults --*/
+
+// Navy blue brand color
+$navbar-bg: #003d6b !default;
+$navbar-fg: #ffffff !default;
+$navbar-hl: #00d4ff !default;
+$navbar-brand: #ffffff !default;
+
+/*-- scss:rules --*/
+
+// Main header styling
+header#quarto-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  .navbar {
+    padding: 0.75rem 0;
+    background-color: $navbar-bg;
+    
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+// Navbar brand styling
+.navbar-brand-container {
+  margin: 0 !important;
+  flex: 0 0 auto;
+  
+  .navbar-brand {
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: $navbar-brand !important;
+    
+    &:hover {
+      color: $navbar-hl !important;
+    }
+  }
+}
+
+// Search bar styling - make it more prominent
+#quarto-search {
+  flex: 1 1 auto;
+  margin: 0 2rem;
+  min-width: 250px;
+  
+  .aa-Form {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding: 0.5rem 1rem !important;
+    
+    &:focus-within {
+      background-color: rgba(255, 255, 255, 0.25) !important;
+      border-color: $navbar-hl !important;
+    }
+  }
+  
+  .aa-Input {
+    color: $navbar-fg !important;
+    font-size: 0.95rem;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+  }
+  
+  .aa-Label {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+// Navbar tools styling
+.quarto-navbar-tools {
+  display: flex;
+  gap: 1rem;
+  flex: 0 0 auto;
+  
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .quarto-navigation-tool {
+    color: $navbar-fg !important;
+    font-size: 1.2rem;
+    padding: 0.5rem !important;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: $navbar-hl !important;
+    }
+  }
+}
+
+// Navbar collapse menu
+.navbar-collapse {
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-fg !important;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem !important;
+      
+      &:hover {
+        color: $navbar-hl !important;
+      }
+    }
+  }
+}
+
+// Secondary navbar (breadcrumbs)
+nav.quarto-secondary-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.75rem 1.5rem;
+  
+  .quarto-btn-toggle {
+    color: #495057;
+    border-color: #dee2e6;
+    
+    &:hover {
+      background-color: #e9ecef;
+      border-color: #adb5bd;
+    }
+  }
+  
+  .quarto-page-breadcrumbs {
+    .breadcrumb {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      
+      .breadcrumb-item {
+        &.active {
+          color: #495057;
+          font-weight: 500;
+        }
+        
+        a {
+          color: #0066cc;
+          text-decoration: none;
+          transition: color 0.2s ease;
+          
+          &:hover {
+            color: #003d6b;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Sidebar styling - modern minimal look
+nav#quarto-sidebar {
+  border-right: 1px solid #e9ecef;
+  background-color: #ffffff;
+  
+  .sidebar-header {
+    padding: 1.5rem 1rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .sidebar-menu-container {
+    padding: 1rem 0;
+  }
+  
+  // Section titles
+  .sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
+    color: #003d6b;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  
+  // Sidebar dividers
+  .sidebar-divider {
+    margin: 0.5rem 0;
+    border-color: #e9ecef;
+  }
+  
+  // Regular sidebar items
+  .sidebar-item {
+    .sidebar-item-container {
+      .sidebar-item-text {
+        color: #495057;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          color: #003d6b;
+          background-color: #f0f0f0;
+          padding-left: 1.25rem;
+        }
+        
+        &.active {
+          color: #003d6b;
+          font-weight: 600;
+          background-color: rgba(0, 61, 107, 0.08);
+          border-left: 3px solid #003d6b;
+          padding-left: calc(1rem - 3px);
+        }
+      }
+    }
+  }
+  
+  // Toggle arrows
+  .sidebar-item-toggle {
+    color: #003d6b;
+    transition: transform 0.2s ease;
+    
+    &[aria-expanded="true"] {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  header#quarto-header {
+    .navbar-container {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+  
+  #quarto-search {
+    margin: 0.5rem 0 !important;
+    min-width: 100% !important;
+    order: 4;
+  }
+  
+  .quarto-navbar-tools {
+    order: 3;
+  }
+  
+  nav.quarto-secondary-nav {
+    padding: 0.5rem 1rem;
+    
+    .quarto-page-breadcrumbs {
+      display: none;
+    }
+  }
+}
+
+// Improve search overlay appearance
+.aa-Dropdown {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 4px;
+  border: 1px solid #e9ecef !important;
+}
+
+.aa-Panel {
+  max-height: 400px;
+}
+
+.aa-Item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  
+  &[aria-selected="true"] {
+    background-color: rgba(0, 61, 107, 0.1);
+  }
+}
+
+// Link colors throughout
+a {
+  color: #003d6b;
+  
+  &:hover {
+    color: #002450;
+  }
+}
+
+// Table of contents styling
+.quarto-margin-sidebar {
+  .toc-active {
+    border-left-color: #003d6b;
+    color: #003d6b;
+  }
+}

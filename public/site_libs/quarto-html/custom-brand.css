@@ -1,0 +1,398 @@
+/* From assets/css/index.css (minified design system) */
+@import "assets/css/index.css";
+
+/* Modern Minimal Navigation Design */
+
+/* Navy Blue Color Palette */
+:root {
+  --mita-navy: #003d6b;
+  --mita-navy-dark: #002450;
+  --mita-cyan: #00d4ff;
+  --mita-light: #f8f9fa;
+  --mita-border: #e9ecef;
+}
+
+/* Custom title styling */
+.mita-title {
+  font-family: Bitter, serif;
+  font-size: 16pt;
+  font-weight: 700;
+  padding-left: 30pt;
+}
+
+/* Main content */
+article {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+/* Header and Navbar */
+header#quarto-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #003d6b;
+}
+
+header#quarto-header .navbar {
+  padding: 1.5rem;
+  background-color: var(--mita-navy);
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  header#quarto-header .navbar {
+    padding: 1.25rem;
+  }
+}
+
+header#quarto-header .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 1.5rem;
+  gap: 1rem;
+}
+
+/* Brand Styling */
+.navbar-brand-container {
+  margin: 0 !important;
+  flex: 0 1 auto;
+  order: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar-brand-container .navbar-brand-logo {
+  height: auto;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.navbar-brand-container .navbar-brand-logo img {
+  height: auto;
+  width: 180px;
+  object-fit: contain;
+  transform: none;
+}
+
+.navbar-brand-container .navbar-brand,
+.navbar-brand-container .navbar-brand.mita-title {
+  padding: 0;
+  font-family: Bitter, serif;
+  font-size: 18pt;
+  font-weight: 700;
+  padding-left: 0;
+  padding-bottom: 0;
+  letter-spacing: 0.5px;
+  word-spacing: 0.2em;
+  line-height: 1.3;
+  color: #ffffff !important;
+  transition: color 0.2s ease;
+  margin: 0;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  margin-left: 2rem;
+}
+
+.navbar-brand-container .navbar-brand:hover {
+  color: var(--mita-cyan) !important;
+}
+
+/* Search Bar - Keep original style */
+#quarto-search {
+  order: 2;
+}
+
+/* Navbar Tools */
+.quarto-navbar-tools {
+  display: flex;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+  order: 3;
+}
+
+.quarto-navbar-tools .dropdown-toggle::after {
+  display: none;
+}
+
+.quarto-navbar-tools .quarto-navigation-tool {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem !important;
+  transition: color 0.2s ease;
+  border: none;
+  background: transparent;
+}
+
+.quarto-navbar-tools .quarto-navigation-tool:hover {
+  color: var(--mita-cyan) !important;
+}
+
+/* Navbar Menu */
+.navbar-collapse {
+  order: 4;
+  margin-left: auto;
+}
+
+.navbar-collapse .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover {
+  color: var(--mita-cyan) !important;
+}
+
+/* Secondary Navbar (Breadcrumbs) */
+nav.quarto-secondary-nav {
+  background-color: var(--mita-light);
+  border-bottom: 2px solid #003d6b;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav.quarto-secondary-nav .quarto-btn-toggle {
+  color: #495057;
+  border-color: var(--mita-border);
+  transition: all 0.2s ease;
+}
+
+nav.quarto-secondary-nav .quarto-btn-toggle:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  color: var(--mita-navy);
+}
+
+/* Breadcrumbs */
+.quarto-page-breadcrumbs .breadcrumb {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.quarto-page-breadcrumbs .breadcrumb-item {
+  color: #868e96;
+}
+
+.quarto-page-breadcrumbs .breadcrumb-item.active {
+  color: #495057;
+  font-weight: 500;
+}
+
+.quarto-page-breadcrumbs .breadcrumb-item a {
+  color: var(--mita-navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.quarto-page-breadcrumbs .breadcrumb-item a:hover {
+  color: var(--mita-navy-dark);
+  text-decoration: underline;
+}
+
+/* Sidebar Styling */
+nav#quarto-sidebar {
+  border-right: 1px solid var(--mita-border);
+  background-color: #ffffff;
+  top: 61px;
+}
+
+nav#quarto-sidebar .sidebar-header {
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+nav#quarto-sidebar .sidebar-menu-container {
+  padding: 1rem 0;
+}
+
+/* Section Headers in Sidebar */
+nav#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-item-text,
+nav#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a.sidebar-item-text {
+  color: var(--mita-navy);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+}
+
+nav#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-item-text:hover,
+nav#quarto-sidebar .sidebar-item-section > .sidebar-item-container > a.sidebar-item-text:hover {
+  background-color: #f0f0f0;
+  color: var(--mita-navy-dark);
+}
+
+/* Sidebar Dividers */
+nav#quarto-sidebar .sidebar-divider {
+  margin: 1rem 0;
+  border-color: #003d6b;
+  height: 2px;
+  background-color: #003d6b;
+}
+
+/* Regular Sidebar Items */
+nav#quarto-sidebar .sidebar-item .sidebar-item-container .sidebar-item-text,
+nav#quarto-sidebar .sidebar-item .sidebar-item-container a.sidebar-item-text {
+  color: #495057;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+nav#quarto-sidebar .sidebar-item .sidebar-item-container .sidebar-item-text:hover,
+nav#quarto-sidebar .sidebar-item .sidebar-item-container a.sidebar-item-text:hover {
+  color: var(--mita-navy);
+  background-color: #f0f0f0;
+  padding-left: 1.25rem;
+}
+
+/* Active Sidebar Items */
+nav#quarto-sidebar .sidebar-item .sidebar-item-container a.sidebar-item-text.active {
+  color: var(--mita-navy);
+  font-weight: 600;
+  background-color: rgba(0, 61, 107, 0.08);
+  border-left: 3px solid var(--mita-navy);
+  padding-left: calc(1rem - 3px);
+}
+
+/* Toggle Arrows */
+nav#quarto-sidebar .sidebar-item-toggle {
+  color: var(--mita-navy);
+  transition: transform 0.2s ease;
+  margin-right: 0.5rem;
+}
+
+nav#quarto-sidebar .sidebar-item-toggle[aria-expanded="true"] {
+  transform: rotate(90deg);
+}
+
+/* Sidebar Section Collapse */
+nav#quarto-sidebar .sidebar-section {
+  padding-left: 0;
+}
+
+nav#quarto-sidebar .sidebar-section.depth1 {
+  margin-left: 0;
+}
+
+/* Search Results Dropdown */
+.aa-Dropdown {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 4px;
+  border: 1px solid var(--mita-border) !important;
+  overflow: hidden;
+}
+
+.aa-Panel {
+  max-height: 400px;
+  background-color: #ffffff;
+}
+
+.aa-Item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.aa-Item[aria-selected="true"] {
+  background-color: rgba(0, 61, 107, 0.1);
+  color: var(--mita-navy);
+}
+
+.aa-ItemLink {
+  color: var(--mita-navy);
+}
+
+.aa-ItemLink:hover {
+  color: var(--mita-navy-dark);
+}
+
+/* Global Link Colors */
+a {
+  color: var(--mita-navy);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--mita-navy-dark);
+}
+
+/* Table of Contents */
+.quarto-margin-sidebar .toc-active {
+  border-left-color: var(--mita-navy);
+  color: var(--mita-navy);
+}
+
+.quarto-margin-sidebar a {
+  color: #495057;
+}
+
+.quarto-margin-sidebar a:hover {
+  color: var(--mita-navy);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header#quarto-header .navbar-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  #quarto-search {
+    margin: 0.5rem 0 !important;
+    min-width: 100% !important;
+    order: 4;
+  }
+  
+  .quarto-navbar-tools {
+    order: 3;
+  }
+  
+  nav.quarto-secondary-nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  .quarto-page-breadcrumbs {
+    display: none;
+  }
+  
+  .navbar-brand-container .navbar-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #quarto-search {
+    display: none;
+  }
+  
+  header#quarto-header .navbar {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Smooth Transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus,
+input:focus {
+  outline: 2px solid var(--mita-cyan);
+  outline-offset: 2px;
+}
